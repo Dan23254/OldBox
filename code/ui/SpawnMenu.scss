@@ -1,4 +1,4 @@
-﻿spawnmenu {
+spawnmenu {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -144,29 +144,30 @@
         }
 
         .icon {
-            border-radius: 16px;
-            color: rgba( #fff, 0.5 );
-            font-size: 12px;
+            border-radius: 15px;
+            color: rgba( black, 1 );
+            font-size: 10px;
+            font-weight: bold;
             text-align: center;
             cursor: pointer;
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 90%;
             background-position: center;
             background-size: cover;
-            background-color: rgba(black, 0.1);
+            background-color: rgba(black, 0.5);
             background-image: url( /entity/spawnicon.png );
 
             label {
-                font-size: 9px;
+                font-size: 12px;
                 position: absolute;
-                bottom: -17px;
+                bottom: 0px;
                 left: 0;
                 right: 0;
                 pointer-events: none;
             }
 
             &:hover {
-                color: #fff;
+                color: #111;
                 background-color: rgba(black, 0.4);
             }
 

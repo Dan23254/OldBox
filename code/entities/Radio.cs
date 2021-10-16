@@ -1,8 +1,8 @@
 ﻿using Sandbox;
 using System;
 
-[Library( "ent_radio4", Title = "Radio", Spawnable = true )]
-public partial class RadioEntity4: Prop, IUse
+[Library( "ent_radio", Title = "Erectin A River Radio", Spawnable = true )]
+public partial class RadioEntity: Prop, IUse
 {
 
 	public bool Enable { get; set; } = false;
