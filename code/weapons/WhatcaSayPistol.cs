@@ -1,11 +1,12 @@
 ﻿using Sandbox;
 
-[Library( "weapon_powpistol", Title = "PowPistol", Spawnable = true )]
-public class PowPistol: Weapon
+[Library( "weapon_whatcasay", Title = "Whatca Say Pistol", Spawnable = true )]
+partial class WhatcaSay: Weapon
 {
 	public override string ViewModelPath => "weapons/rust_pistol/v_rust_pistol.vmdl";
-	public override float PrimaryRate => 0.8f;
-	public override float SecondaryRate => 1f;
+
+	public override float PrimaryRate => 0.1f;
+	public override float SecondaryRate => 45f;
 
 	public TimeSince TimeSinceDischarge { get; set; }
 
@@ -29,7 +30,7 @@ public class PowPistol: Weapon
 		(Owner as AnimEntity)?.SetAnimBool( "b_attack", true );
 
 		ShootEffects();
-		PlaySound( "pow.shoot" );
+		PlaySound( "whatchasay" );
 		ShootBullet( 0.05f, 1.5f, 9.0f, 3.0f );
 	}
 
